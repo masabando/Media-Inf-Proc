@@ -42,9 +42,15 @@ reader.onload = function (e) {
   image.src = e.target.result;
 };
 image.onload = function () {
-  canvas.width = image.width;
-  canvas.height = image.height;
-  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  let width = image.width;
+  let height = image.height;
+  if (width > 1000) {
+    width = 1000;
+    height = image.height * 1000 / image.width;
+  }
+  canvas.width = width;
+  canvas.height = height;
+  ctx.drawImage(image, 0, 0, image.width, image.height, 0, 0, width, height);
   buttons.forEach(button => {
     button.disabled = false;
   });
