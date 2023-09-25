@@ -1,0 +1,13 @@
+
+#textForm {
+  max-width: 600px;
+}
+
+#textOutTable {
+  text-align: center;
+  max-width: 600px;
+}
+
+#textOutTable td, #textOutTable th {
+  white-space: nowrap;
+}

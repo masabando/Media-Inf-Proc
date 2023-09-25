@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "kuromoji": "^0.1.2",
+    "kuromojin": "^3.0.0"
+  }
+}

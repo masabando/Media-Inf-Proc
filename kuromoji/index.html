@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <h1 class="mt-3">テキスト処理の基礎</h1>
+
+    <div class="mb-3 mt-5">
+      <label for="textForm" class="form-label">テキストを入力しよう</label>
+      <input type="text" class="form-control" id="textForm" value="坂東先生はイケメンなうえにプログラミングの天才かもしれない">
+      <div class="mt-3">
+        <button id="textStart" class="btn btn-primary">形態素解析</button>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <span>形態素解析結果</span>
+      <div class="table-responsive-xl">
+        <table id="textOutTable" class="table">
+          <thead>
+            <tr>
+              <th>表層形</th>
+              <th>品詞</th>
+              <th>活用型</th>
+              <th>活用形</th>
+              <th>基本形</th>
+              <th>読み</th>
+              <th>発音</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../base.js"></script>
+  <script src="../node_modules/kuromoji/build/kuromoji.js"></script>
+  <script src="program.js"></script>
+</body>
+
+</html>
