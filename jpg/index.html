@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JPEG変換</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <h1 class="mt-3">JPEG変換</h1>
+
+    <div class="mb-3 mw">
+      <label for="formFile" class="form-label">画像ファイル</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+
+    <div class="mb-3 mw">
+      <label for="qualityRange" class="form-label">JPEG変換品質 : <span id="quality"></span></label>
+      <input type="range" class="form-range" id="qualityRange">
+    </div>
+
+    <div class="mb-3">
+      <button data-loop="1" class="btn btn-primary convertButton">1回変換</button>
+      <button data-loop="10" class="btn btn-primary convertButton">10回変換</button>
+      <button data-loop="100" class="btn btn-primary convertButton">100回変換</button>
+      <button data-loop="1000" class="btn btn-primary convertButton">1000回変換</button>
+    </div>
+    <div class="mb-3">
+      <button id="reset" class="btn btn-success">リセット</button>
+    </div>
+    <div id="loopCount"></div>
+    <div class="mb-3" id="totalCount"></div>
+
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="../base.js"></script>
+  <script src="../node_modules/kuromoji/build/kuromoji.js"></script>
+  <script src="program.js"></script>
+</body>
+
+</html>

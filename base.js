@@ -3,7 +3,7 @@ function createNavbar(pageTitle) {
   document.querySelector("body").insertAdjacentHTML("afterbegin", `
 <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="https://helixcode.notion.site/e81f0bd4e01e463487904adb4c12a2ad?pvs=4">メディア情報処理</a>
+    <a class="navbar-brand" href="https://helixcode.notion.site/e81f0bd4e01e463487904adb4c12a2ad?pvs=4">メディア情報処理 / ${pageTitle}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,6 +18,7 @@ function createNavbar(pageTitle) {
             <li><a class="dropdown-item" href="https://alice.helixcode.net/~bando/pub/fft/">音声/音楽をFFT</a></li>
             <li><a class="dropdown-item" href="https://alice.helixcode.net/~bando/pub/fft/fftOsc/">単音をFFT</a></li>
             <li><a class="dropdown-item" href="https://alice.helixcode.net/~bando/pub/fft/fft3D/">FFT 3D</a></li>
+            <li><a class="dropdown-item" href="../jpg/">Jpeg変換</a></li>
           </ul>
         </li>
       </ul>
