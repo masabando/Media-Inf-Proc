@@ -15,6 +15,9 @@ function createNavbar(pageTitle) {
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="../kuromoji/">テキスト処理</a></li>
+            <li><a class="dropdown-item" href="https://alice.helixcode.net/~bando/pub/fft/">音声/音楽をFFT</a></li>
+            <li><a class="dropdown-item" href="https://alice.helixcode.net/~bando/pub/fft/fftOsc/">単音をFFT</a></li>
+            <li><a class="dropdown-item" href="https://alice.helixcode.net/~bando/pub/fft/fft3D/">FFT 3D</a></li>
           </ul>
         </li>
       </ul>
